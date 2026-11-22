@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lantern Thief — The Silent Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e14; color: #d8d3c3;
+    font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { width: 960px; margin: 18px auto 24px; }
+  h1 { font-size: 22px; letter-spacing: 2px; margin: 0 0 4px; color: #e8c96a;
+    font-weight: normal; }
+  h1 span { color: #8fa3bf; font-size: 14px; letter-spacing: 1px; }
+  #sub { font-size: 13px; color: #8a8fa0; margin: 0 0 10px; font-style: italic; }
+  canvas { display: block; background: #10141f; border: 1px solid #2c3242;
+    box-shadow: 0 0 40px rgba(0,0,0,.6); cursor: crosshair; }
+  #hint { margin-top: 10px; font-size: 13px; line-height: 1.7; color: #9aa0b0; }
+  #hint b { color: #d8d3c3; }
+  #hint .key { display: inline-block; border: 1px solid #4a5064; border-radius: 3px;
+    padding: 0 5px; background: #171b26; color: #e8c96a; font-family: monospace; font-size: 12px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>LANTERN THIEF <span>— The Silent Gallery</span></h1>
+  <p id="sub">A moonlit museum. Three relics. Four watchmen. One quiet exit.</p>
+  <canvas id="game" width="960" height="640"></canvas>
+  <div id="hint">
+    <b>Move</b> <span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span> or arrow keys &nbsp;·&nbsp;
+    <b>Sneak</b> hold <span class="key">Shift</span> (slow, quiet, harder to spot) &nbsp;·&nbsp;
+    <b>Throw a pebble</b> click the floor (3 pebbles — guards investigate the noise) &nbsp;·&nbsp;
+    <b>Pause</b> <span class="key">P</span> &nbsp;·&nbsp; <b>Restart</b> <span class="key">R</span> &nbsp;·&nbsp; <b>Mute</b> <span class="key">M</span><br>
+    Stay out of the yellow cones. Crates and display cases block a guard's sight; dark floor patches hide you.
+    Steal all three relics, then slip out the green exit.
+  </div>
+</div>
+<script src="src/level.js"></script>
+<script src="src/input.js"></script>
+<script src="src/guard.js"></script>
+<script src="src/render.js"></script>
+<script src="src/sound.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
